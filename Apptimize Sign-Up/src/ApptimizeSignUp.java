@@ -22,7 +22,7 @@ public class ApptimizeSignUp {
     @BeforeClass
     public static void setUp() {
         //Set chrome driver path of your system in the below line
-        System.setProperty("webdriver.chrome.driver", "C:\\Selenium_Chromedriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Selenium_Chromedriver\\chromedriver.exe");//add chrome driver path of local system
         driver = new ChromeDriver();
     }
 
@@ -49,7 +49,7 @@ public class ApptimizeSignUp {
         driver.findElement(By.id("lname")).clear();
         driver.findElement(By.id("lname")).sendKeys("Siroya");
         driver.findElement(By.id("email")).clear();
-        driver.findElement(By.id("email")).sendKeys("practice10@gmail.com");
+        driver.findElement(By.id("email")).sendKeys("janish.siroya@sjsu.edu"); //update the email id for script execution
         driver.findElement(By.id("company")).clear();
         driver.findElement(By.id("company")).sendKeys("Apptimize Candidate");
         driver.findElement(By.id("phone")).clear();
